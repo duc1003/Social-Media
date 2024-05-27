@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import "./register.scss";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom"
 import axios from "axios";
 
 const Register = () => {
+
+  const navigate = useNavigate();
 
   const [inputs, setInputs] = useState({
     username:"",
@@ -23,6 +26,7 @@ const Register = () => {
 
     try {
       await axios.post("http://localhost:8080/api/auth/register", inputs);
+      navigate("/login");
     } catch (err) {
       setErr(err.response.data);
     }
@@ -51,7 +55,7 @@ const Register = () => {
             <input type="email" placeholder="Email" name="email" onChange={handleChange}/>
             <input type="password" placeholder="Password" name="password" onChange={handleChange}/>
             <input type="text" placeholder="Name" name="name" onChange={handleChange}/>
-            {err && err}
+            {err && <span style={{color: "red"}}>{err}</span>}
             <button onClick={handleRegister}>Register</button>
           </form>
         </div>
