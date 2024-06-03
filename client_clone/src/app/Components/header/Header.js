@@ -16,14 +16,12 @@ const Header = () => {
         </a>
         <HomeOutlinedIcon />
         <WbSunnyOutlinedIcon />
-        <GridViewOutlinedIcon />
       </div>
       <div className={styles.search}>
         <SearchOutlinedIcon />
         <input type="text" placeholder="Search..." />
       </div>
       <div className={styles.right}>
-        <PersonOutlinedIcon />
         <EmailOutlinedIcon />
         <NotificationsOutlinedIcon />
         <div className={styles.user}>

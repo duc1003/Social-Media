@@ -1,5 +1,16 @@
+.container{
+    flex: 3 1;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    background-color: #f6f3f3;
+    padding: 20px;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
 .div{
-    width: 412px;
     min-height: 600px;
 }
 .ul{
