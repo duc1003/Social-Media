@@ -19,7 +19,9 @@
 .left span{
     font-weight: bold;
     font-size: 20px;
-    color: darkblue;
+    background: var(--colorLogo);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 

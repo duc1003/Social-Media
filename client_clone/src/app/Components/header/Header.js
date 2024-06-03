@@ -12,7 +12,7 @@ const Header = () => {
     <div className={styles.navbar}>
       <div className={styles.left}>
         <a href="/" style={{ textDecoration: "none" }}>
-          <span>lamasocial</span>
+          <span>SocialMedia</span>
         </a>
         <HomeOutlinedIcon />
         <WbSunnyOutlinedIcon />

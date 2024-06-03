@@ -2,4 +2,16 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    height: 1500px;
+}
+:root{
+    --colorLogo:-webkit-linear-gradient(#C02425, #F0CB35);
+    --white:#FFFFFF;
+    --black:#000000;
+    --lightGray:#F0F2F5;
+    --boldBlue: #2851A3;
+    --lightBlue:#EBF5FF;
+    --green:#24853C;
+    --red:#f0544f;
 }
