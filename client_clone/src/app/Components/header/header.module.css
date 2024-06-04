@@ -39,7 +39,9 @@
     background-color: transparent;
     color:#000;
 }
-        
+.search  input:focus-visible{
+    outline: none;
+}      
 
 .right {
     display: flex;

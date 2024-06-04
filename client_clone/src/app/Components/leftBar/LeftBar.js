@@ -14,6 +14,7 @@ import Messages from "../../assets/10.png";
 import Tutorials from "../../assets/11.png";
 import Courses from "../../assets/12.png";
 import Fund from "../../assets/13.png";
+import Link from 'next/link';
 const LeftBar = () => {
   return (
     <div className={styles.container}>
@@ -23,10 +24,10 @@ const LeftBar = () => {
                     <img src="https://png.pngtree.com/thumb_back/fh260/background/20210416/pngtree-purple-starry-gentle-gentle-and-colorful-clouds-background-image_619990.jpg" alt=""/>
                     <span>Hoàng Kim Thịnh</span>
                 </div>
-                <div className = {styles.item}>
+                <Link href={"/friends"} className = {styles.item}>
                     <Image src= {friends} alt="" width={30} height={30}/>
                     <span>Friends</span>
-                </div>
+                </Link>
                 <div className = {styles.item}>
                     <Image src= {Groups} alt="" width={30} height={30}/>
                     <span>Groups</span>

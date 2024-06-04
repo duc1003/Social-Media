@@ -9,7 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import styles from "./post.module.css";
-import Popover from "../popover/popover";
+import Popover from "../popover/Popover";
 
 const Post = ({ post }) => {
   const [commentOpen, setCommentOpen] = useState(false);
