@@ -1,6 +1,7 @@
 import { Roboto_Serif } from "next/font/google";
 import "./globals.css";
 
+import { NextUIProvider } from '@nextui-org/react';
 const inter = Roboto_Serif({ subsets: ["latin"] });
 
 export const metadata = {
