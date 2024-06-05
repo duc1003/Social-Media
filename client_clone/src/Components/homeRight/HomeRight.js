@@ -1,6 +1,8 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import styles from "./homeRight.module.css";
+import ButtonCustom from "../Button/ButtonCustom"
 export default function HomeRight() {
   return (
     
@@ -20,8 +22,34 @@ export default function HomeRight() {
               <h3 className={styles.name}>Jong Doe</h3>
             </div>
             <div className={styles.liRight}>
-              <button className={styles.buttonBlue}>follow</button>
-              <button className={styles.buttonRed}>dismiss</button>
+            <ButtonCustom
+                  border = "none"
+                  cursor = "pointer"
+                  textColor="var(--white)"
+                  color = "var(--boldBlue)"
+                  margin = "0 10px 0 0"
+                  fontSize = "12px"
+                  textAlign = "center"
+                  children = "follow"
+                  height = "30px"
+                  onClick = {() => {}}
+                  radius = "0"
+                  width = "60px"
+              />
+              <ButtonCustom
+                  border = "none"
+                  cursor = "pointer"
+                  textColor="var(--white)"
+                  color = "var(--red)"
+                  margin = "0 10px 0 0"
+                  fontSize = "12px"
+                  textAlign = "center"
+                  children = "dismiss"
+                  height = "30px"
+                  onClick = {() => {}}
+                  radius = "0"
+                  width = "60px"
+              />
             </div>
           </li>
           <li className={styles.li}>
@@ -36,8 +64,34 @@ export default function HomeRight() {
               <h3 className={styles.name}>Jong Doe</h3>
             </div>
             <div className={styles.liRight}>
-              <button className={styles.buttonBlue}>follow</button>
-              <button className={styles.buttonRed}>dismiss</button>
+            <ButtonCustom
+                  border = "none"
+                  cursor = "pointer"
+                  textColor="var(--white)"
+                  color = "var(--boldBlue)"
+                  margin = "0 10px 0 0"
+                  fontSize = "12px"
+                  textAlign = "center"
+                  children = "follow"
+                  height = "30px"
+                  onClick = {() => {}}
+                  radius = "0"
+                  width = "60px"
+              />
+              <ButtonCustom
+                  border = "none"
+                  cursor = "pointer"
+                  textColor="var(--white)"
+                  color = "var(--red)"
+                  margin = "0 10px 0 0"
+                  fontSize = "12px"
+                  textAlign = "center"
+                  children = "dismiss"
+                  height = "30px"
+                  onClick = {() => {}}
+                  radius = "0"
+                  width = "60px"
+              />
             </div>
           </li>
           <li className={styles.li}>
@@ -52,10 +106,37 @@ export default function HomeRight() {
               <h3 className={styles.name}>Jong Doe</h3>
             </div>
             <div className={styles.liRight}>
-              <button className={styles.buttonBlue}>follow</button>
-              <button className={styles.buttonRed}>dismiss</button>
+            <ButtonCustom
+                  border = "none"
+                  cursor = "pointer"
+                  textColor="var(--white)"
+                  color = "var(--boldBlue)"
+                  margin = "0 10px 0 0"
+                  fontSize = "12px"
+                  textAlign = "center"
+                  children = "follow"
+                  height = "30px"
+                  onClick = {() => {}}
+                  radius = "0"
+                  width = "60px"
+              />
+              <ButtonCustom
+                  border = "none"
+                  cursor = "pointer"
+                  textColor="var(--white)"
+                  color = "var(--red)"
+                  margin = "0 10px 0 0"
+                  fontSize = "12px"
+                  textAlign = "center"
+                  children = "dismiss"
+                  height = "30px"
+                  onClick = {() => {}}
+                  radius = "0"
+                  width = "60px"
+              />
             </div>
           </li>
+
         </ul>
         <ul className={styles.ul}>
           <h3 className={styles.title}>Online Friends</h3>

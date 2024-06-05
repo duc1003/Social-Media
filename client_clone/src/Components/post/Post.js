@@ -9,8 +9,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import styles from "./post.module.css";
-import Popover from "../popover/Popover";
-
+import Popover from "../popover/Popover"
+import ButtonCustom from "../Button/ButtonCustom";
 const Post = ({ post }) => {
   const [commentOpen, setCommentOpen] = useState(false);
   const [countLike, setCountLike] = useState(12);
@@ -64,19 +64,41 @@ const Post = ({ post }) => {
           />
         </div>
         <div className={styles.info}>
-          <div className={styles.item} onClick={() => setLiked(!liked)}>
-            {liked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
+          {/* onClick={() => setLiked(!liked)} */}
+          <div className={styles.item} >
+            {/* {liked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />} */}
+            <ButtonCustom
+            fontSize = "14px"
+            border="none"
+            color = "var(--white)"
+            children = {liked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
+            onClick = {() => setLiked(!liked)}
+          />
             {countLike}
           </div>
+
           <div
             className={styles.item}
-            onClick={() => setCommentOpen(!commentOpen)}
+            onClick = {() => setCommentOpen(!commentOpen)}
           >
-            <TextsmsOutlinedIcon />
+            <ButtonCustom
+            fontSize = "14px"
+            border="none"
+            color = "var(--white)"
+            children = {<TextsmsOutlinedIcon />}
+            
+          />
             12 Comments
           </div>
-          <div className={styles.item}>
-            <ShareOutlinedIcon />
+          <div className={styles.item} onClick = {() => {}}>
+          <ButtonCustom
+            fontSize = "14px"
+            border="none"
+            color = "var(--white)"
+            children = {<ShareOutlinedIcon />}
+            
+          />
+            
             Share
           </div>
         </div>

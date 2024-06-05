@@ -7,6 +7,7 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import ButtonCustom from "../Button/ButtonCustom"
 const Header = () => {
   return (
     <div className={styles.navbar}>
@@ -14,16 +15,52 @@ const Header = () => {
         <a href="/" style={{ textDecoration: "none" }}>
           <span>SocialMedia</span>
         </a>
-        <HomeOutlinedIcon />
-        <WbSunnyOutlinedIcon />
+        <ButtonCustom
+            fontSize = "14px"
+            border="none"
+            color = "var(--white)"
+            cursor = "pointer"
+            children = {<HomeOutlinedIcon />}
+          />
+          <ButtonCustom
+            fontSize = "14px"
+            border="none"
+            cursor = "pointer"
+            color = "var(--white)"
+            children = {<WbSunnyOutlinedIcon />}
+          />
+        {/* <HomeOutlinedIcon />
+        <WbSunnyOutlinedIcon /> */}
       </div>
       <div className={styles.search}>
-        <SearchOutlinedIcon />
+        
+        <ButtonCustom
+            fontSize = "14px"
+            border="none"
+            color = "var(--white)"
+            cursor = "pointer"
+            children = {<SearchOutlinedIcon />}
+          />
         <input type="text" placeholder="Search..." />
       </div>
       <div className={styles.right}>
-        <EmailOutlinedIcon />
-        <NotificationsOutlinedIcon />
+      <ButtonCustom
+            fontSize = "14px"
+            border="none"
+            color = "var(--white)"
+            cursor = "pointer"
+            children = {<EmailOutlinedIcon />}
+          />
+      <ButtonCustom
+            fontSize = "14px"
+            border="none"
+            color = "var(--white)"
+            cursor = "pointer"
+            children = {<NotificationsOutlinedIcon />}
+          />
+    
+        
+        
         <div className={styles.user}>
           <img
             src={

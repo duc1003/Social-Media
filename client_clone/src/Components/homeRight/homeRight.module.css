@@ -48,28 +48,7 @@
     flex-direction: row;
     align-items: center;
 }
-.buttonBlue{
-    width: 60px;
-    height: 30px;
-    margin-right: 10px;
-    font-size: 12px;
-    text-align: center;
-    color: var(--white);
-    background-color: var(--boldBlue);
-    border: none;
-}
 
-.buttonRed{
-    width: 60px;
-    height: 30px;
-    margin-right: 10px;
-    font-size: 12px;
-    text-align: center;
-    color: var(--white);
-    background-color: var(--red);
-    border: none;
-
-}
 .imageContainer {
     position: relative;
     display: inline-block;
