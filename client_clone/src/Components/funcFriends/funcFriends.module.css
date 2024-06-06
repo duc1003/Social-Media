@@ -22,14 +22,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #E4E6EB;
+    background-color: #E4E6EB !important;
     border-radius: 16px;
 }
 
 .active{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1) !important;
 }
 .active .listIcon{
-    background-color: #0866ff;
-    color: white;
+    background-color: #0866ff !important;
+    color: white !important;
 }

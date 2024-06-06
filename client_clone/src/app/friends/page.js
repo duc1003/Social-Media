@@ -1,6 +1,7 @@
 "use client";
 import styles from "./friends.module.css";
 import Header from "../../Components/header/Header";
+import CardFriend from "../../Components/cardFriend/CardFriend";
 import SettingsIcon from "@mui/icons-material/Settings";
 import FuncFriends from "../../Components/funcFriends/FuncFriends";
 import GroupIcon from "@mui/icons-material/Group";
@@ -10,7 +11,6 @@ import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import CakeIcon from "@mui/icons-material/Cake";
 import { useState } from "react";
 import Link from "next/link";
-
 const Friends = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const handleFuncFriendsClick = (index) => {
@@ -35,11 +35,15 @@ const Friends = () => {
                 active={activeIndex === 0}
                 onClick={() => handleFuncFriendsClick(0)}
               />
-              <FuncFriends
-                icon={<AccessibilityNewIcon />}
-                title="Lời mời kết bạn"
-              />
-              <FuncFriends icon={<PersonAddIcon />} title="Gợi ý" />
+              <Link href="/friends/request" className={styles.friendLink}>
+                <FuncFriends
+                  icon={<AccessibilityNewIcon />}
+                  title="Lời mời kết bạn"
+                />
+              </Link>
+              <Link href="/friends/suggest" className={styles.friendLink}>
+                <FuncFriends icon={<PersonAddIcon />} title="Gợi ý" />
+              </Link>
               <FuncFriends icon={<PeopleAltIcon />} title="Tất cả bạn bè" />
               <FuncFriends
                 icon={<CakeIcon />}
@@ -59,17 +63,7 @@ const Friends = () => {
               </Link>
             </div>
             <div className={styles.rightCard}>
-              <div className={styles.card}>
-                <div className={styles.img}>
-                  <img
-                    src="https://png.pngtree.com/thumb_back/fh260/background/20210416/pngtree-purple-starry-gentle-gentle-and-colorful-clouds-background-image_619990.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className={styles.cardTitle}>Hoàng Kim Thịnh</div>
-                <button className={styles.save}>Xác nhận</button>
-                <button className={styles.cancel}>Xóa</button>
-              </div>
+              <CardFriend />
             </div>
             <hr />
           </div>
@@ -81,17 +75,7 @@ const Friends = () => {
               </Link>
             </div>
             <div className={styles.rightCard}>
-              <div className={styles.card}>
-                <div className={styles.img}>
-                  <img
-                    src="https://png.pngtree.com/thumb_back/fh260/background/20210416/pngtree-purple-starry-gentle-gentle-and-colorful-clouds-background-image_619990.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className={styles.cardTitle}>Hoàng Kim Thịnh</div>
-                <button className={styles.save}>Xác nhận</button>
-                <button className={styles.cancel}>Xóa</button>
-              </div>
+              <CardFriend />
             </div>
           </div>
         </div>

@@ -22,6 +22,10 @@
     align-items: center;
     height: 30px;
 }
+.friendLink{
+    text-decoration: none;
+    all: unset;
+}
 .icon{
     width: 28px;
     height: 28px;
