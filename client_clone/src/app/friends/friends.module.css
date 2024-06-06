@@ -1,0 +1,100 @@
+.wrapper{
+    display: flex;
+}
+.leftBar{
+    width: 320px;
+    height: calc(100vh - 70px);
+    background-color: white;
+    color: #000;
+    position: fixed;
+    top: 70px;
+}
+.leftBar::-webkit-scrollbar{
+    display: none;
+}
+.leftPadding{
+    width: 100%;
+}
+.setTitle{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+.icon{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4E6EB;
+    border-radius: 16px;
+}
+.leftContent{
+    width: 100%;
+}
+
+.rightBar{
+    margin-left: 303px;
+    width: calc(100vw - 320px);
+    height: calc(100vh - 70px);
+    background-color: #F0F2F5;
+
+}
+.invite,.suggest{
+    width: calc(100vw - 320px);
+    
+}
+.rightTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 10px 50px;
+    margin-top: 20px;
+}
+.rightTitle h4{
+    font-weight: 500;
+}
+.rightTitle .rightLink{
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0866ff;
+}
+.rightCard{
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.card{
+    width: 168px;
+    height: 250px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+}
+.img{
+    width: 100%;
+    height: 160px;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.card .cardTitle{
+    font-size: 12px;
+    margin: 10px;
+}
+.card button{
+    width: 70%;
+    margin: 5px auto;
+}
