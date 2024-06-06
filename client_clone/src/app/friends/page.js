@@ -10,11 +10,11 @@ import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import CakeIcon from "@mui/icons-material/Cake";
 import { useState } from "react";
 import Link from "next/link";
-import ButtonCustom from "../../Components/Button/ButtonCustom";
+
 const Friends = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const handleFuncFriendsClick = (index) => {
-    setActiveIndex(index); 
+    setActiveIndex(index);
   };
   return (
     <div className={styles.container}>
@@ -39,14 +39,8 @@ const Friends = () => {
                 icon={<AccessibilityNewIcon />}
                 title="Lời mời kết bạn"
               />
-              <FuncFriends
-                icon={<PersonAddIcon />}
-                title="Gợi ý"
-              />
-              <FuncFriends
-                icon={<PeopleAltIcon />}
-                title="Tất cả bạn bè"
-              />
+              <FuncFriends icon={<PersonAddIcon />} title="Gợi ý" />
+              <FuncFriends icon={<PeopleAltIcon />} title="Tất cả bạn bè" />
               <FuncFriends
                 icon={<CakeIcon />}
                 title="Sinh nhật"
@@ -60,37 +54,46 @@ const Friends = () => {
           <div className={styles.invite}>
             <div className={styles.rightTitle}>
               <h4>Lời mời kết bạn</h4>
-              <Link href="/friends/request" className={styles.rightLink} >Xem tất cả</Link>
+              <Link href="/friends/request" className={styles.rightLink}>
+                Xem tất cả
+              </Link>
             </div>
             <div className={styles.rightCard}>
               <div className={styles.card}>
                 <div className={styles.img}>
-                  <img src="https://png.pngtree.com/thumb_back/fh260/background/20210416/pngtree-purple-starry-gentle-gentle-and-colorful-clouds-background-image_619990.jpg" alt=""/>
+                  <img
+                    src="https://png.pngtree.com/thumb_back/fh260/background/20210416/pngtree-purple-starry-gentle-gentle-and-colorful-clouds-background-image_619990.jpg"
+                    alt=""
+                  />
                 </div>
                 <div className={styles.cardTitle}>Hoàng Kim Thịnh</div>
                 <button className={styles.save}>Xác nhận</button>
                 <button className={styles.cancel}>Xóa</button>
               </div>
             </div>
-            <hr/>
+            <hr />
           </div>
           <div className={styles.suggest}>
             <div className={styles.rightTitle}>
               <h4>Những người bạn có thể biết</h4>
-              <Link href={"/friends/suggest"} className={styles.rightLink} >Xem tất cả</Link>
+              <Link href="/friends/suggest" className={styles.rightLink}>
+                Xem tất cả
+              </Link>
             </div>
             <div className={styles.rightCard}>
               <div className={styles.card}>
-                  <div className={styles.img}>
-                    <img src="https://png.pngtree.com/thumb_back/fh260/background/20210416/pngtree-purple-starry-gentle-gentle-and-colorful-clouds-background-image_619990.jpg" alt=""/>
-                  </div>
-                  <div className={styles.cardTitle}>Hoàng Kim Thịnh</div>
-                  <button className={styles.save}>Xác nhận</button>
-                  <button className={styles.cancel}>Xóa</button>
+                <div className={styles.img}>
+                  <img
+                    src="https://png.pngtree.com/thumb_back/fh260/background/20210416/pngtree-purple-starry-gentle-gentle-and-colorful-clouds-background-image_619990.jpg"
+                    alt=""
+                  />
                 </div>
+                <div className={styles.cardTitle}>Hoàng Kim Thịnh</div>
+                <button className={styles.save}>Xác nhận</button>
+                <button className={styles.cancel}>Xóa</button>
               </div>
+            </div>
           </div>
-          <hr/>
         </div>
       </div>
     </div>
