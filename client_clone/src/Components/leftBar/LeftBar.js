@@ -6,7 +6,7 @@ import friends from '../../assets/1.png'
 import Groups from "../../assets/2.png";
 import Market from "../../assets/3.png";
 import Watch from "../../assets/4.png";
-import Memories from "../../assets/5.png";
+import Memories from "../../assets/5.png"   ;
 import Events from "../../assets/6.png";
 import Gaming from "../../assets/7.png";
 import Gallery from "../../assets/8.png";
@@ -27,7 +27,7 @@ const LeftBar = () => {
                     <img src="https://png.pngtree.com/thumb_back/fh260/background/20210416/pngtree-purple-starry-gentle-gentle-and-colorful-clouds-background-image_619990.jpg" alt=""/>
                     <span>Hoàng Kim Thịnh</span>
                 </div>
-                <Link href={"/friends"} className = {styles.item}>
+                <Link href={"/friends"} className = {styles.item}>  
                     <Image src= {friends} alt="" width={30} height={30}/>
                     <span>Friends</span>
                 </Link>

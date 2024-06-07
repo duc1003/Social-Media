@@ -1,0 +1,35 @@
+.list{
+    padding: 0 20px;
+    cursor: pointer;
+}
+.list:hover .listPadding{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.listPadding{
+    padding: 10px 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 30px;
+    border-radius: 8px;
+}
+.listPadding h5{
+    font-weight: 600;
+}
+.listIcon{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4E6EB !important;
+    border-radius: 16px;
+}
+
+.active{
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.active .listIcon{
+    background-color: #0866ff !important;
+    color: white !important;
+}
