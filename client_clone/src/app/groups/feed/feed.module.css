@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+}
+.content{
+    flex: 7 1 0%;
+}
+.home{
+    padding: 20px 70px;
+    background-color: #f6f3f3;
+    /* width: 680px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    width: 70%;
+    margin: 20px 0 14px 28px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gray);
+}

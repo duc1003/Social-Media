@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import styles from './leftBar.module.css'
 import Image from 'next/image'
@@ -15,7 +16,9 @@ import Tutorials from "../../assets/11.png";
 import Courses from "../../assets/12.png";
 import Fund from "../../assets/13.png";
 import Link from 'next/link';
+import { useRouter } from 'next/navigation'
 const LeftBar = () => {
+    const router = useRouter()
   return (
     <div className={styles.container}>
         <div className={styles.wrapper}>
@@ -28,10 +31,11 @@ const LeftBar = () => {
                     <Image src= {friends} alt="" width={30} height={30}/>
                     <span>Friends</span>
                 </Link>
-                <div className = {styles.item}>
+                <Link  href={"/groups"} className = {styles.item}>
                     <Image src= {Groups} alt="" width={30} height={30}/>
                     <span>Groups</span>
-                </div>
+                </Link>
+
                 <div className = {styles.item}>
                     <Image src= {Market} alt="" width={30} height={30}/>
                     <span>Market</span>

@@ -20,15 +20,19 @@ const Header = () => {
             border="none"
             color = "var(--white)"
             cursor = "pointer"
-            children = {<HomeOutlinedIcon />}
-          />
+            
+          >
+            {<HomeOutlinedIcon />}
+          </ButtonCustom>
           <ButtonCustom
             fontSize = "14px"
             border="none"
             cursor = "pointer"
             color = "var(--white)"
-            children = {<WbSunnyOutlinedIcon />}
-          />
+            
+          >
+            {<WbSunnyOutlinedIcon />}
+          </ButtonCustom>
         {/* <HomeOutlinedIcon />
         <WbSunnyOutlinedIcon /> */}
       </div>
@@ -39,8 +43,10 @@ const Header = () => {
             border="none"
             color = "var(--white)"
             cursor = "pointer"
-            children = {<SearchOutlinedIcon />}
-          />
+            
+          >
+            {<SearchOutlinedIcon />}
+          </ButtonCustom>
         <input type="text" placeholder="Search..." />
       </div>
       <div className={styles.right}>
@@ -49,15 +55,19 @@ const Header = () => {
             border="none"
             color = "var(--white)"
             cursor = "pointer"
-            children = {<EmailOutlinedIcon />}
-          />
+            
+          >
+            {<EmailOutlinedIcon />}
+          </ButtonCustom>
       <ButtonCustom
             fontSize = "14px"
             border="none"
             color = "var(--white)"
             cursor = "pointer"
-            children = {<NotificationsOutlinedIcon />}
-          />
+            
+          >
+            {<NotificationsOutlinedIcon />}
+          </ButtonCustom>
     
         
         

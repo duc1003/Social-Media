@@ -46,8 +46,8 @@ const Post = ({ post }) => {
             </div>
           </div>
           
-          <div class={styles.popoverWrapper}>
-              <span class={styles.popoverButton} onClick={() => setPopoverOpen(!popoverOpen)}><MoreHorizIcon /></span>
+          <div className={styles.popoverWrapper}>
+              <span className={styles.popoverButton} onClick={() => setPopoverOpen(!popoverOpen)}><MoreHorizIcon /></span>
               {popoverOpen ? <Popover/> : <></>}
           
           </div>
@@ -71,9 +71,11 @@ const Post = ({ post }) => {
             fontSize = "14px"
             border="none"
             color = "var(--white)"
-            children = {liked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
+            
             onClick = {() => setLiked(!liked)}
-          />
+          >
+            {liked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
+          </ButtonCustom>
             {countLike}
           </div>
 
@@ -85,19 +87,21 @@ const Post = ({ post }) => {
             fontSize = "14px"
             border="none"
             color = "var(--white)"
-            children = {<TextsmsOutlinedIcon />}
             
-          />
+            
+          >
+            {<TextsmsOutlinedIcon />}
+          </ButtonCustom>
             12 Comments
           </div>
           <div className={styles.item} onClick = {() => {}}>
           <ButtonCustom
             fontSize = "14px"
             border="none"
-            color = "var(--white)"
-            children = {<ShareOutlinedIcon />}
-            
-          />
+            color = "var(--white)"      
+          >
+          {<ShareOutlinedIcon />}
+          </ButtonCustom>
             
             Share
           </div>

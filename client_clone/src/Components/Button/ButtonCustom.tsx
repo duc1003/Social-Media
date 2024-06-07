@@ -8,7 +8,7 @@ interface Props {
   margin?: string;
   fontSize?: string;
   textAlign?: "left" | "right" | "center" | "justify" | "initial" | "inherit";
-  children?: React.ReactNode;
+  children?: React.ReactNode | string;
   height?: string;
   onClick: () => void;
   radius?: string;

@@ -1,0 +1,151 @@
+.container{
+    flex: 2 1;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    background-color: white;
+    color: #000;
+ 
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+.wrapper{
+    padding: 20px 5px;
+}
+.wrapper hr{
+    margin: 20px 0px;
+    border: none;
+    height: 0.5px;
+    background-color: lightgray;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.item{
+    text-decoration: none;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 6px 10px;
+
+}
+.icon{
+    background: var(--lightGray);
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    margin: 20px 5px;
+}    
+.button > :first-child  {
+    font-weight: 700;
+}
+
+.text{
+    font-size: 15px;
+    font-weight: 600;
+}
+.activeItem{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--lightGray);
+    padding: 6px 10px;
+    color: var(--black);
+    border-radius: 10px;
+}
+.activeIcon{
+    color: var(--white);
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--boldBlue);
+}
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 4px 0 20px 0;
+    border: none;
+    background: var(--lightGray);
+}
+.search  input {
+    border: none;
+    width: 500px;
+    background-color: transparent;
+    color:#000;
+}
+.search  input:focus-visible{
+    outline: none;
+}   
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px;
+}  
+
+.headerTitle{}
+.headerIcon{
+    width: 30px;
+    height: 30px;
+    background: var(--lightGray);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.groups{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imgGroup img{
+    border-radius: 10px;
+    border: 1px solid var(--lightGray);
+}
+.content{
+    padding-left: 10px;
+}
+.nameGroup{
+    font-size: 15px;
+}
+.time{
+    font-size: 13px;
+    margin-top: -10px;
+}
+.joinedGroup{
+    font-size: 15px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
