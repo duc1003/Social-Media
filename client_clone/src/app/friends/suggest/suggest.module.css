@@ -1,0 +1,58 @@
+.wrapper{
+    display: flex;
+}
+.leftBar{
+    width: 320px;
+    background-color: #fff;
+    height: calc(100vh - 70px);
+    position: sticky;
+    top: 70px;
+}
+.boxTitle{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+}
+.title{
+    height: 100%;
+}
+.title p,.title h4{
+    margin: 14px 0;
+}
+.title p{
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.boxTitleIcon{
+    cursor: pointer;
+}
+.leftCard{
+    padding: 0 10px;
+}
+.leftCard h4{
+    font-weight: 600;
+}
+
+.rightBar{
+    flex: 1;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightBarContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rightBarContent p{
+    font-weight: 700;
+    opacity: 0.7;
+}
+.link{
+    all: unset;
+}

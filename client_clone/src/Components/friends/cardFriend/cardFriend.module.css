@@ -22,13 +22,14 @@
     margin: 10px 0 0 10px ;
 }
 .card button{
-    width: 70%;
+    width: 146px;
     margin: 0 auto;
     margin-top: 6px;
     border: none;
     font-size: 12px;
     padding: 5px;
     cursor: pointer;
+    border-radius: 4px;
 }
 .save{
     background-color: #0866FF;

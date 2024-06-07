@@ -3,7 +3,7 @@ import styles from "./request.module.css";
 import Header from "../../../Components/header/Header";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import friendRequest from '../../../assets/friendRequest.png'
-import FuncRequest from '../../../Components/funcRequest/FuncRequest'
+import FuncRequest from '../../../Components/friends/funcRequest/FuncRequest'
 import Image from "next/image";
 import Link from "next/link";
 const page = () => {

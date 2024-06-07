@@ -12,7 +12,7 @@ const FuncRequest = () => {
       <div className={styles.cardContent}>
         <p className={styles.cardName}>Hoàng Kim Thịnh</p>
         <div className={styles.cardButton}>
-          <button>Following</button>
+          <button>Follow</button>
           <button>Dismiss</button>
         </div>
       </div>

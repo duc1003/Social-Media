@@ -10,8 +10,8 @@ const CardFriend = () => {
         />
       </div>
       <div className={styles.cardTitle}>Hoàng Kim Thịnh</div>
-      <button className={styles.save}>Xác nhận</button>
-      <button className={styles.cancel}>Xóa</button>
+      <button className={styles.save}>Follow</button>
+      <button className={styles.cancel}>Dismiss</button>
     </div>
   );
 };

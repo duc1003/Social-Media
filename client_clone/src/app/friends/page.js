@@ -1,9 +1,9 @@
 "use client";
 import styles from "./friends.module.css";
 import Header from "../../Components/header/Header";
-import CardFriend from "../../Components/cardFriend/CardFriend";
+import CardFriend from "../../Components/friends/cardFriend/CardFriend";
 import SettingsIcon from "@mui/icons-material/Settings";
-import FuncFriends from "../../Components/funcFriends/FuncFriends";
+import FuncFriends from "../../Components/friends/funcFriends/FuncFriends";
 import GroupIcon from "@mui/icons-material/Group";
 import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
