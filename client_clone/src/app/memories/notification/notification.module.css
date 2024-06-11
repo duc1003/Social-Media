@@ -1,0 +1,97 @@
+.container {
+  margin-top: 30px;
+  width: 600px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+}
+.container h4,
+.container p {
+  margin: 0;
+}
+.container h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 5px 0 15px 0;
+}
+.container p {
+  margin-bottom: 15px;
+}
+.card {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px 10px;
+}
+.card:hover {
+  background-color: rgba(229, 229, 229, 0.8);
+  cursor: pointer;
+  border-radius: 16px;
+}
+.card hr {
+  position: absolute;
+  bottom: -8px;
+  width: 97%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.6;
+}
+.cardContent h5,
+.cardContent p {
+  margin: 0;
+}
+.cardContent h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.cardContent p {
+  font-size: 14px;
+}
+/* input */
+.cardButton input[type="radio"] {
+  display: none;
+}
+
+.cardButton label {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+.cardButton label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.cardButton input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-86%);
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #0866ff;
+}
+
+.cardButton input[type="radio"]:checked + label::before {
+  border-color: #0866ff;
+}

@@ -44,10 +44,10 @@ const LeftBar = () => {
                     <Image src= {Watch} alt="" width={30} height={30}/>
                     <span>Watch</span>
                 </div>
-                <div className = {styles.item}>
+                <Link href={"/memories"} className = {styles.item}>
                     <Image src= {Memories} alt="" width={30} height={30}/>
                     <span>Memories</span>
-                </div>
+                </Link>
             </div>
             <hr/>
             <div className={styles.menu}>
