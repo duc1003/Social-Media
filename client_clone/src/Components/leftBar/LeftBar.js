@@ -52,10 +52,10 @@ const LeftBar = () => {
             <hr/>
             <div className={styles.menu}>
                 <span>Yours Shortcuts</span>
-                <div className = {styles.item}>
+                <Link href={"/events"} className = {styles.item}>
                     <Image src= {Events} alt="" width={30} height={30}/>
                     <span>Events</span>
-                </div>
+                </Link>
                 <div className = {styles.item}>
                     <Image src= {Gaming} alt="" width={30} height={30}/>
                     <span>Gaming</span>

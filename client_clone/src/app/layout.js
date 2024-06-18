@@ -1,7 +1,6 @@
 import { Roboto_Serif } from "next/font/google";
 import "./globals.css";
-
-
+import DateContext from '../dateContext/DateContext'
 const inter = Roboto_Serif({ subsets: ["latin"] });
 
 export const metadata = {
@@ -11,8 +10,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <DateContext>
+      <html lang="en">
+        <body className={inter.className}>{children}</body>
+      </html>
+    </DateContext>
   );
 }

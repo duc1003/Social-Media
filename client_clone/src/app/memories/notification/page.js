@@ -12,7 +12,7 @@ const page = () => {
         </div>
         <div className={styles.cardButton}>
           <input type="radio" id="radio1" name="custom-radio"/>
-          <label for="radio1"></label>
+          <label htmlFor="radio1"></label>
         </div>
         <hr/>
       </div>
@@ -24,7 +24,7 @@ const page = () => {
         </div>
         <div className={styles.cardButton}>
           <input type="radio" id="radio2" name="custom-radio"/>
-          <label for="radio2"></label>
+          <label htmlFor="radio2"></label>
         </div>
         <hr/>
       </div>
@@ -36,7 +36,7 @@ const page = () => {
         </div>
         <div className={styles.cardButton}>
           <input type="radio" id="radio3" name="custom-radio"/>
-          <label for="radio3"></label>
+          <label htmlFor="radio3"></label>
         </div>
         <hr/>
       </div>

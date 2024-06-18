@@ -1,0 +1,71 @@
+.container{
+    width: 320px;
+    background-color: #fff;
+    height: calc(100vh - 70px);
+    position: sticky;
+    top: 70px;
+}
+.boxTitle{
+    height: 100px;
+}
+.boxTitle h4{
+     padding: 0 20px;
+     font-size: 20px;
+     font-weight: 600;
+     margin: 15px 0;
+}
+.memoriesLink{
+    all: unset;
+    padding: 0;
+}
+.boxTitle hr{
+    width: 280px;
+}
+
+.card .cardTitle{
+    margin: 0;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* search */
+.search{
+    padding: 0 10px;
+    width: 286px;
+    display: flex;
+    position: relative;
+}
+.search input{
+    width: 100%;
+    border: none;
+    background-color: #f0f2f5;
+    padding: 10px 30px;
+    border-radius: 16px;
+}
+.search input:focus-visible{
+    outline: none;
+}
+.searchIcon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/*  */
+.addEvent{
+    padding: 0 20px;
+}
+.addEvent button{
+    color: #fff;
+    background: #0866ff;
+    border: none;
+    padding: 10px 82px;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
