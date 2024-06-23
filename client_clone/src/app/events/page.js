@@ -108,13 +108,13 @@ export default function Events() {
           )}
         </div>
         <div className={styles.boxEvent}>
-          <BoxEvent/>
-          <BoxEvent/>
-          <BoxEvent/>
-          <BoxEvent/>
-          <BoxEvent/>
-          <BoxEvent/>
-          <BoxEvent/>
+          <BoxEvent id = {"1"}/>
+          <BoxEvent id = {"1"}/>
+          <BoxEvent id = {"1"}/>
+          <BoxEvent id = {"1"}/>
+          <BoxEvent id = {"1"}/>
+          <BoxEvent id = {"1"}/>
+          <BoxEvent id = {"1"}/>
         </div>
       </div>
     </div>

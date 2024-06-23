@@ -1,10 +1,15 @@
+.CPLink{
+    all: unset;
+}
 .container{
+    all: unset;
     width: 330px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     position: relative;
+    
 }
 .img{
     width: 100%;

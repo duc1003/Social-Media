@@ -1,0 +1,95 @@
+.boxModel{
+    outline: none !important;
+    border-radius: 6px;
+    height: 400px;
+    overflow-y: scroll;
+}
+.boxModel::-webkit-scrollbar{
+    width: 7px;
+}
+.boxModel::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+    border-radius: 5px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.boxSearch{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.boxSearch input{
+    width: 260px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.boxSearch input:focus-visible{
+    outline: none;
+}
+.boxSearch input::placeholder{
+    color: #ccc;
+}
+.boxSearch button{
+    background: #0866ff;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    padding: 10px 25px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.boxAccount{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+}
+.boxAccount .account{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding: 5px;
+}
+.boxAccount .account:hover{
+    background-color: rgba(204, 204, 204,0.2);
+    
+    
+}
+.account .accountAvatar{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.account .accountAvatar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 16px;
+}
+.account .accountAvatar h5{
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0;
+}
+.account button{
+    background: #0866ff;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.account .active{
+    background-color: #ccc;
+    color: #000;
+    cursor: default;
+
+}

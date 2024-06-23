@@ -3,10 +3,13 @@ import styles from "./boxEvent.module.css";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
-const BoxEvent = () => {
+import Link from "next/link";
+
+const BoxEvent = ({ id }) => {
   const popperRef = useRef(null);
   const [openPopper, setOpenPopper] = useState(false);
   const [buttonQT, setButtonQT] = useState(false);
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (popperRef.current && !popperRef.current.contains(event.target)) {
@@ -21,8 +24,27 @@ const BoxEvent = () => {
     };
   }, []);
 
+  const handleButtonClick = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    setButtonQT(true);
+  };
+
+  const handleQuanTamClick = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    setOpenPopper(true);
+  };
+
+  const handleCloseClick = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    setButtonQT(false);
+    setOpenPopper(false);
+  };
+
   return (
-    <div className={styles.container} onClick={() => setOpenPopper(false)}>
+    <Link href={`/events/${id}`} className={styles.container} >
       <div className={styles.img}>
         <img src="https://png.pngtree.com/thumb_back/fh260/background/20210416/pngtree-purple-starry-gentle-gentle-and-colorful-clouds-background-image_619990.jpg" />
       </div>
@@ -36,10 +58,7 @@ const BoxEvent = () => {
         {buttonQT ? (
           <button
             className={styles.buttonSecond}
-            onClick={(e) => {
-              e.stopPropagation();
-              setOpenPopper(true);
-            }}
+            onClick={handleQuanTamClick}
           >
             <StarBorderIcon />
             Quan tâm
@@ -47,7 +66,7 @@ const BoxEvent = () => {
         ) : (
           <button
             className={styles.buttonFirst}
-            onClick={() => setButtonQT(true)}
+            onClick={handleButtonClick}
           >
             <StarBorderIcon />
             Quan tâm
@@ -62,16 +81,13 @@ const BoxEvent = () => {
         >
           <div className={styles.filterRadio}>
             <label htmlFor="filterRadio1" className={styles.boxInputLocation}>
-              <label htmlFor="filterRadio1">
-                <StarBorderIcon />
-                <p>Quan tâm</p>
-              </label>
+              <StarBorderIcon />
+              <p>Quan tâm</p>
               <input
                 type="radio"
                 id="filterRadio1"
                 style={{ width: "18px" }}
                 name="filterRadio1"
-                checked
               />
             </label>
             <label
@@ -79,10 +95,8 @@ const BoxEvent = () => {
               className={styles.boxInputLocation}
               style={{ margin: "0" }}
             >
-              <label htmlFor="filterRadio2">
-                <CheckIcon />
-                <p>Sẽ tham gia</p>
-              </label>
+              <CheckIcon />
+              <p>Sẽ tham gia</p>
               <input
                 type="radio"
                 id="filterRadio2"
@@ -94,15 +108,10 @@ const BoxEvent = () => {
               htmlFor="filterRadio3"
               className={styles.boxInputLocation}
               style={{ margin: "0" }}
-              onClick={() => {
-                setButtonQT(false);
-                setOpenPopper(false);
-              }}
+              onClick={handleCloseClick}
             >
-              <label htmlFor="filterRadio3">
-                <CloseIcon />
-                <p>Không quan tâm</p>
-              </label>
+              <CloseIcon />
+              <p>Không quan tâm</p>
               <input
                 type="radio"
                 id="filterRadio3"
@@ -115,7 +124,7 @@ const BoxEvent = () => {
       ) : (
         <div className={styles.noneDiv}></div>
       )}
-    </div>
+    </Link>
   );
 };
 
