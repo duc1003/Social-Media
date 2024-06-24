@@ -59,8 +59,10 @@ const Post = ({ post }) => {
               "https://png.pngtree.com/thumb_back/fh260/background/20210416/pngtree-purple-starry-gentle-gentle-and-colorful-clouds-background-image_619990.jpg"
             }
             alt=""
-            width={650}
-            height={500}
+            // width={650}
+            // height={500}
+            sizes="100vw"
+            fill
           />
         </div>
         <div className={styles.info}>

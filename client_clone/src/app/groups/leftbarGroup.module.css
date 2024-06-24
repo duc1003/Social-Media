@@ -149,3 +149,62 @@
     flex-direction: row;
     width: 100%;
 }
+.user {
+    display: flex;
+    padding: 20px 10px;
+
+  }
+  .userInfo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .userInfoImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+  .details a{
+    text-decoration: none;
+  }
+  .name {
+    font-weight: 500;
+    color: var(--black);
+  }
+  .role{
+    font-size: 12px;
+  }
+.inputField{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5px;
+}
+.inputField input {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  
+  .inputField select {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+
+  }
+  
+  .inputField option {
+    padding: 8px;
+  }
+.menu{
+    display: flex;
+    flex-direction: column;
+}

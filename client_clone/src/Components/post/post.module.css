@@ -43,6 +43,9 @@
 
 .content {
   margin: 20px 0px;
+  position: relative;
+  height: 500px;
+  width: 650px;
 }
 .content .img {
   width: 100%;
