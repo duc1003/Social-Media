@@ -1,0 +1,100 @@
+.container {
+  align-self: flex-start;
+  margin-top: 30px;
+  width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+}
+.container .active{
+    display: none;
+}
+.container h4,
+.container p {
+  margin: 0;
+}
+.container h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0 5px 0;
+}
+.container p {
+  margin-bottom: 15px;
+}
+
+/* time */
+.boxTime {
+  border-bottom: 1px solid #ced0d4;
+  position: relative;
+  margin-bottom: 10px;
+}
+.boxTime p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.itemIcon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 6px;
+}
+.itemIcon svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 2px;
+}
+.itemIcon svg:hover {
+  background-color: #ced0d4;
+}
+
+/*  nút*/
+.container button {
+  width: 32%;
+  font-size: 15px;
+  padding: 10px 5px;
+  border: none;
+  background: #0866ff;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/*  */
+.customSelect h5{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.customSelectButton button{
+    all: unset;
+    background: #ccc;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.customSelectButton button:first-child{
+    opacity: 0.8;
+}
+.customSelectButton button:last-child{
+    background-color: #0866ff;
+    opacity: 0.8;
+    color: #fff;
+}
+.customSelect{
+    display: flex;
+    flex-direction: column;
+}
+.customSelectButton{
+    align-self: flex-end;
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+}

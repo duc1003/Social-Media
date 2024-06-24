@@ -1,0 +1,35 @@
+.wrapper{
+    display: flex;
+}
+.rightBar{
+    width: calc(100vw - 320px);
+    height: calc(100vh - 70px);
+    background-color: #F0F2F5;
+    display: flex;
+    justify-content: center;
+}
+.rightBox{
+    margin-top: 30px;
+    border-radius: 16px;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+}
+.rightImg{
+    border-radius: 16px 16px 0 0;
+}
+.rightTitle,.rightContent{
+    width: 500px;
+    margin: 0;
+    text-align: center;
+}
+.rightTitle{
+    font-size: 20px;
+}
+.rightContent{
+    font-size: 14px;
+}

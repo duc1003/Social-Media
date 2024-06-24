@@ -1,0 +1,166 @@
+.wrapper{
+    display: flex;
+}
+.rightBar{
+    width: calc(100vw - 320px);
+    height: calc(100vh - 70px);
+    background-color: #F0F2F5;
+    display: flex;
+    justify-content: center;
+}
+.home{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-self: start;
+    justify-content: center;
+    background-color: #F0F2F5;
+}
+.homeContent{
+    background-color: #fff;
+    width: 1032px;
+    align-self: flex-start;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.homeTitle{
+    margin: 0;
+    font-size: 20px;
+}
+.boxFilter{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+    position: relative;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #e4e6eb;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.filter:hover{
+    background-color: #ccc;
+}
+.filter p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.filterIcon{
+    font-size: 16px;
+}
+.calendar{
+    position: absolute;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px #ccc;
+    background-color: #fff;
+    z-index: 1001;
+    top: 40px;
+    left: 155px;
+}
+.buttonCalendar{
+    position: absolute;
+    background: #0866ff;
+    bottom: 16px;
+    border: none;
+    color: #fff;
+    padding: 8px 33px;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 258px;
+    border-radius: 6px;
+}
+.noneDiv{
+    display: none;
+}
+.filterLocation{
+    width: 304px;
+    height: 176px;
+    background-color: #fff;
+    box-shadow: 2px 2px 6px #ccc;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    border-radius: 6px;
+    z-index: 1000;
+}
+/* search */
+.search{
+    padding: 0 10px;
+    width: 286px;
+    display: flex;
+    position: relative;
+}
+.search input{
+    width: 100%;
+    border: none;
+    background-color: #f0f2f5;
+    padding: 10px 30px;
+    border-radius: 16px;
+}
+.search input:focus-visible{
+    outline: none;
+}
+.searchIcon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.filterLocation{
+    padding-top: 10px;
+}
+.filterRadio{
+    padding: 0 10px;
+}
+.boxInputLocation{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.boxInputLocation:hover{
+    background-color: #e4e6eb;
+}
+.boxInputLocation label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.boxInputLocation input[type="radio"]{
+    font-size: 20px;
+}
+.boxInputLocation label p{
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600
+}
+.filterRadio hr{
+    width: 80%;
+    color: #ccc;
+}
+.boxEvent{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
