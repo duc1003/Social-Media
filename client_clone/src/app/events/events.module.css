@@ -113,6 +113,34 @@
 .search input:focus-visible{
     outline: none;
 }
+.popperSearch{
+    position: absolute;
+    width: 284px;
+    background-color: #fff;
+    box-shadow: 2px 2px 6px #ccc;
+    top: 45px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: hidden;
+}
+
+.searchLocation{
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.searchLocation:hover{
+    background-color: #F0F2F5;
+}
+.searchLocation p{
+    margin: 0;
+}
 .searchIcon{
     position: absolute;
     top: 50%;
@@ -164,3 +192,4 @@
     flex-wrap: wrap;
 
 }
+
