@@ -43,4 +43,5 @@
 .container .active{
     background-color: #0866ff;
     color: #fff;
+    cursor: pointer;
 }
