@@ -4,6 +4,9 @@ import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import BookmarkIcon from '@mui/icons-material/Bookmark';
+import ClearIcon from '@mui/icons-material/Clear';
+
 import Comments from "../comments/Comments";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,6 +20,11 @@ const Post = ({ post }) => {
   const [liked, setLiked] = useState(false);
   const [popoverOpen, setPopoverOpen] = useState(false);
 
+  const dataPopover = [
+    {id :1, title : "Lưu bài viết", icon: <BookmarkIcon/>},
+    {id :2, title : "Ẩn bài viết", icon: <ClearIcon/>},
+
+  ]
   useEffect(() => {
     if (liked) {
       setCountLike(countLike + 1);
@@ -48,7 +56,8 @@ const Post = ({ post }) => {
           
           <div className={styles.popoverWrapper}>
               <span className={styles.popoverButton} onClick={() => setPopoverOpen(!popoverOpen)}><MoreHorizIcon /></span>
-              {popoverOpen ? <Popover/> : <></>}
+              {popoverOpen ? 
+              <Popover dataPopover={dataPopover} /> : <></>}
           
           </div>
         </div>

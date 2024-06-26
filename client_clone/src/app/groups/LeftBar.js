@@ -128,7 +128,7 @@ const LeftBar = () => {
               >
                 <ExploreIcon />
               </span>
-              <span className={styles.text}>Bảng feed của bạn</span>
+              <span className={styles.text}>Khám phá</span>
             </Link>
 
             <Link
@@ -148,7 +148,7 @@ const LeftBar = () => {
               >
                 <GroupsIcon />
               </span>
-              <span className={styles.text}>Bảng feed của bạn</span>
+              <span className={styles.text}>Nhóm của bạn</span>
             </Link>
           </div>
           <div className={styles.button}>
@@ -191,7 +191,8 @@ const LeftBar = () => {
                 />
               </div>
               <div className={styles.content}>
-                <h3 className={styles.nameGroup}>Toan cao cap-IUH</h3>
+              <Link href={'/groups/1'} className={styles.nameGroup}>Toan cao cap-IUH</Link>
+
                 <p className={styles.time}>
                   Lần hoạt động gần nhất: 6 giờ trước
                 </p>
@@ -209,7 +210,8 @@ const LeftBar = () => {
                 />
               </div>
               <div className={styles.content}>
-                <h3 className={styles.nameGroup}>Toan cao cap-IUH</h3>
+              <Link href={'/groups/1'} className={styles.nameGroup}>Toan cao cap-IUH</Link>
+
                 <p className={styles.time}>
                   Lần hoạt động gần nhất: 6 giờ trước
                 </p>
@@ -227,7 +229,8 @@ const LeftBar = () => {
                 />
               </div>
               <div className={styles.content}>
-                <h3 className={styles.nameGroup}>Toan cao cap-IUH</h3>
+              <Link href={'/groups/1'} className={styles.nameGroup}>Toan cao cap-IUH</Link>
+
                 <p className={styles.time}>
                   Lần hoạt động gần nhất: 6 giờ trước
                 </p>

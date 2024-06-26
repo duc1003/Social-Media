@@ -1,0 +1,109 @@
+.wrapper{
+}
+.header{
+    background: linear-gradient(to bottom, #83a4d4, #b6fbff);
+    height: 600px;
+}
+.wrapperHeader{
+    width: 62%;
+    margin: auto;
+    text-align: left;
+}
+.image{
+    border-radius: 10px
+}
+.titleGroup{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+}
+.rightTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.nameGroup{
+
+}
+.desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 10px;
+}
+.desc > *{
+    font-size: 15px;
+    font-weight: 300;
+}
+.leftTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -30px;
+    gap: 15px;
+}
+.popoverWrapper{
+    background-color: var(--lightGray);
+    padding: 3px;
+    border-radius: 6px;
+}
+/* .leftTitle > *{
+    margin-left: -10px;
+} */
+.content{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 16px;
+}
+.popoverWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  position: relative;
+}
+.popoverButton{
+  cursor:pointer;
+}
+.post{
+    width: 65%;
+}
+.share{
+    /* width: 77%; */
+}
+.intro{
+    width: 35%;
+    padding: 10px 15px;
+    background: var(--lightGray);
+    border-radius: 10px;
+}
+.introText{
+    font-size: 17px;
+}
+.introPara{
+    font-size: 13px;
+    font-weight: 400;
+}
+.iconDesc{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.iconDesc span{
+    padding-right: 5px;
+}
+.text{
+
+}
+.text h3{
+    font-size: 17px;
+}
+.text p{
+    font-size: 13px;
+    margin-top: -10px;
+}
+

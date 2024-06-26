@@ -14,6 +14,9 @@ interface Props {
   radius?: string;
   width?: string;
   display?: string; // Thêm thuộc tính display tùy chọn
+  alignItems?: "center" 
+  justifyContent?:"space-around" | "center" | "flex-start" | "flex-end"
+  flexDirection?: "row" | "column" 
 }
 
 const ButtonCustom: React.FC<Props> = ({
@@ -30,6 +33,9 @@ const ButtonCustom: React.FC<Props> = ({
   radius,
   width,
   display,
+  justifyContent,
+  flexDirection,
+  alignItems,
 }) => {
   return (
     <button
@@ -46,6 +52,9 @@ const ButtonCustom: React.FC<Props> = ({
         width,
         display,
         cursor,
+        justifyContent,
+        flexDirection,
+        alignItems,
       }}
     >
       {typeof children === 'string' ? (

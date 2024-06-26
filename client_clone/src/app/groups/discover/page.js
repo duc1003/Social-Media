@@ -3,6 +3,7 @@ import styles from "./discover.module.css"
 import Header from "../../../Components/header/Header"
 import LeftBar from "../LeftBar"
 import Image from 'next/image';
+import Link from "next/link";
 import CloseIcon from '@mui/icons-material/Close';
 import ButtonCustom from '../../../Components/Button/ButtonCustom'
 export default function discoverPage() {
@@ -26,7 +27,8 @@ export default function discoverPage() {
               className={styles.img}
             />
             <div className={styles.text}>
-              <h3 className={styles.title}>Thực hành giao tiếp tiếng anh</h3>
+              <Link href={'/groups/1'} className={styles.title}>Thực hành giao tiếp tiếng anh</Link>
+              {/* <h3 className={styles.title}>Thực hành giao tiếp tiếng anh</h3> */}
               <div className={styles.desc}>
                 <h4>270k thanh vien</h4>
                 <h4>.</h4>
@@ -57,7 +59,8 @@ export default function discoverPage() {
               className={styles.img}
             />
             <div className={styles.text}>
-              <h3 className={styles.title}>Thực hành giao tiếp tiếng anh</h3>
+              <Link href={'/groups/1'} className={styles.title}>Thực hành giao tiếp tiếng anh</Link>
+              {/* <h3 className={styles.title}>Thực hành giao tiếp tiếng anh</h3> */}
               <div className={styles.desc}>
                 <h4>270k thanh vien</h4>
                 <h4>.</h4>
@@ -88,7 +91,8 @@ export default function discoverPage() {
               className={styles.img}
             />
             <div className={styles.text}>
-              <h3 className={styles.title}>Thực hành giao tiếp tiếng anh</h3>
+              <Link href={'/groups/1'} className={styles.title}>Thực hành giao tiếp tiếng anh</Link>
+              {/* <h3 className={styles.title}>Thực hành giao tiếp tiếng anh</h3> */}
               <div className={styles.desc}>
                 <h4>270k thanh vien</h4>
                 <h4>.</h4>
@@ -113,7 +117,7 @@ export default function discoverPage() {
 
 
         <div className={styles.containerContent}>
-          <div className={styles.discoverGroup}>
+        <div className={styles.discoverGroup}>
             <span className={styles.icon}><CloseIcon/></span>
             <Image
               width={334}
@@ -123,7 +127,8 @@ export default function discoverPage() {
               className={styles.img}
             />
             <div className={styles.text}>
-              <h3 className={styles.title}>Thực hành giao tiếp tiếng anh</h3>
+              <Link href={'/groups/1'} className={styles.title}>Thực hành giao tiếp tiếng anh</Link>
+              {/* <h3 className={styles.title}>Thực hành giao tiếp tiếng anh</h3> */}
               <div className={styles.desc}>
                 <h4>270k thanh vien</h4>
                 <h4>.</h4>
@@ -141,6 +146,7 @@ export default function discoverPage() {
             textAlign='center'
             children = "Tham gia nhom"
             radius='6px'
+            cursor='pointer'
           />
           </div>
           <div className={styles.discoverGroup}>
@@ -153,7 +159,8 @@ export default function discoverPage() {
               className={styles.img}
             />
             <div className={styles.text}>
-              <h3 className={styles.title}>Thực hành giao tiếp tiếng anh</h3>
+              <Link href={'/groups/1'} className={styles.title}>Thực hành giao tiếp tiếng anh</Link>
+              {/* <h3 className={styles.title}>Thực hành giao tiếp tiếng anh</h3> */}
               <div className={styles.desc}>
                 <h4>270k thanh vien</h4>
                 <h4>.</h4>
@@ -171,6 +178,7 @@ export default function discoverPage() {
             textAlign='center'
             children = "Tham gia nhom"
             radius='6px'
+            cursor='pointer'
           />
           </div>
           <div className={styles.discoverGroup}>
@@ -183,7 +191,8 @@ export default function discoverPage() {
               className={styles.img}
             />
             <div className={styles.text}>
-              <h3 className={styles.title}>Thực hành giao tiếp tiếng anh</h3>
+              <Link href={'/groups/1'} className={styles.title}>Thực hành giao tiếp tiếng anh</Link>
+              {/* <h3 className={styles.title}>Thực hành giao tiếp tiếng anh</h3> */}
               <div className={styles.desc}>
                 <h4>270k thanh vien</h4>
                 <h4>.</h4>

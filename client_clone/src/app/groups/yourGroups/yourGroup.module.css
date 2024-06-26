@@ -15,10 +15,11 @@
 }
 .title{
     width: 70%;
-    margin: 20px 0 14px 28px;
+    margin: 20px 0 14px 15px;
     font-size: 13px;
     font-weight: 600;
     color: var(--gray);
+    text-decoration: none;
 }
 .containerContent{
     display: flex;
@@ -40,7 +41,7 @@
 .discoverGroup{
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin: 21px 10px 10px 10px;
 
 }
 .icon{
@@ -58,7 +59,7 @@
 }
 .title{
     font-size: 17px;
-    margin: 10px 5px;
+    margin: 10px 0px;
     width: 100%;
 }
 .desc{
@@ -69,7 +70,7 @@
     width: 70%;
     font-size: 12px;
     color: #8e9092;
-    margin: -20px -3px;
+    margin: -14px 2px;
 }
 .desc h4{
     font-weight: 300;
