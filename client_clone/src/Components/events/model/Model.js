@@ -14,7 +14,8 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-const Model = ({ onClose }) => {
+
+const Model = ({ onClose, onSave }) => {
   const today = new Date();
   const day = today.getDate();
   const month = today.getMonth() + 1;
@@ -33,9 +34,22 @@ const Model = ({ onClose }) => {
   const handleFile = (e) => {
     setFile(URL.createObjectURL(e.target.files[0]));
   };
+
   const [meet, setMeet] = React.useState("");
   const [see, setSee] = React.useState("");
   const [desc, setDesc] = React.useState("");
+  const [nameEvent, setNameEvent] = React.useState("");
+  const check =
+    nameEvent !== "" &&
+    meet !== "" &&
+    meet !== "None" &&
+    see !== "" &&
+    see !== "None" &&
+    desc !== "";
+  
+  const handleNameEvent = (e) => {
+    setNameEvent(e.target.value);
+  };
   const handleChangeSee = (event) => {
     setSee(event.target.value);
   };
@@ -45,6 +59,23 @@ const Model = ({ onClose }) => {
   const handleDesc = (e) => {
     setDesc(e.target.value);
   };
+
+  const handleSave = () => {
+    if (check) {
+      const eventData = {
+        nameEvent,
+        meet,
+        see,
+        desc,
+        file,
+        startDate: value,
+        startTime: value2,
+      };
+      onSave(eventData);
+      onClose();
+    } 
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.popper}>
@@ -75,7 +106,12 @@ const Model = ({ onClose }) => {
             </label>
           </div>
           <div className={styles.boxContent}>
-            <input className={styles.nameInput} placeholder="Tên sự kiện" />
+            <input
+              className={styles.nameInput}
+              value={nameEvent}
+              onChange={handleNameEvent}
+              placeholder="Tên sự kiện"
+            />
             <div className={styles.contentDay}>
               <DemoContainer components={["DatePicker", "DatePicker"]}>
                 <DatePicker
@@ -85,14 +121,12 @@ const Model = ({ onClose }) => {
                 />
               </DemoContainer>
               <div className={styles.hour}>
-                
-                  <TimeField
-                    label="Giờ bắt đầu"
-                    value={value2}
-                    onChange={(newValue) => setValue2(newValue)}
-                    className={styles.boxHour}
-                  />
-                
+                <TimeField
+                  label="Giờ bắt đầu"
+                  value={value2}
+                  onChange={(newValue) => setValue2(newValue)}
+                  className={styles.boxHour}
+                />
               </div>
             </div>
             <div className={styles.meet}>
@@ -165,8 +199,8 @@ const Model = ({ onClose }) => {
           </div>
         </div>
         <div className={styles.boxFooter}>
-          <div className={styles.footer}>
-            <button onClick={onClose}>Lưu</button>
+          <div className={`${styles.footer} ${check ? "" : styles.footerDis}`}>
+            <button onClick={handleSave}>Lưu</button>
           </div>
         </div>
       </div>

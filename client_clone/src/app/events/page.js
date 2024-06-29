@@ -82,7 +82,6 @@ export default function Events() {
   };
 
   const handleSuggestionClick = (city) => {
-    console.log(city);
     setCityName("");
     setFilteredSuggestions([]);
     setOpenPopper(false);
@@ -107,7 +106,6 @@ export default function Events() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-  console.log(value);
   return (
     <div className={styles.home}>
       <div className={styles.homeContent}>

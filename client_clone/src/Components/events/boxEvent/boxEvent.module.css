@@ -152,3 +152,19 @@
     width: 80%;
     color: #ccc;
 }
+/* test xíu reponsive */
+@media screen and (min-width : 1240px) and (max-width: 1400px){
+    .container{
+        width: 280px;
+    }
+}
+@media screen and (min-width : 1000px) and (max-width: 1249px){
+    .container{
+        width: 290px;
+    }
+}
+@media screen and  (max-width: 999px){
+    .container{
+        width: 400px;
+    }
+}

@@ -29,7 +29,7 @@ const LeftBar = ({onButtonClick}) => {
           <input
             type="text"
             className={styles.input}
-            placeholder="Tìm kiếm bạn bè"
+            placeholder="Tìm kiếm sự kiện"
           />
           <SearchIcon className={styles.searchIcon} />
         </div>
