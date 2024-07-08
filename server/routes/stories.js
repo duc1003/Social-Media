@@ -1,9 +1,10 @@
 import express from 'express';
+import { getStories, saveStory } from '../controller/StoriesController.js';
+import upload from '../middleware/multerMiddleware.js';
 
 const route = express.Router();
 
-route.get("/test", (req, res) => {
-    res.send("stories routes is ok!");
-});
+route.post("/save", upload.single('file'), saveStory);
+route.get("/get", getStories);
 
 export default route;

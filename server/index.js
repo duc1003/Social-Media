@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import multer from 'multer';
 
 import {usersRoutes , authRoutes, commentsRoutes, postsRoutes, relationshipsRoutes, storiesRoutes} from "./routes/index.js";
 import cookieParser from 'cookie-parser';
@@ -7,6 +8,7 @@ import "dotenv/config.js"
 
 
 const app = express();
+const upload = multer({dest: 'data/uploads/'});
 
 // MIDDLEWARE
 app.use((req, res, next)=> {
@@ -23,13 +25,13 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(cookieParser());
 
-
 app.use("/api/users", usersRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/comment", commentsRoutes);
 app.use("/api/post", postsRoutes);
 app.use("/api/relationship", relationshipsRoutes);
 app.use("/api/story", storiesRoutes);
+
 
 app.listen(process.env.PORT_SERVER, () => {
     console.log(`Server started on 8080`);
