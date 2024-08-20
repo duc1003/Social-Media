@@ -1,6 +1,7 @@
 import jwt from "jsonwebtoken";
 import { db } from "../model/database/Connect.js";
 import bcrypt from "bcryptjs";
+import {keyToken} from "../utils/key.js"
 
 export const login = (req, res) => {
   const query = "SELECT * FROM users WHERE username= ?";
@@ -14,7 +15,7 @@ export const login = (req, res) => {
 
     const {password, ...others} = data[0];
 
-    const token = jwt.sign({ id: data[0].id }, "secretKey");
+    const token = jwt.sign({ id: data[0].id }, keyToken);
     res.cookie("accessToken", token, {
       httpOnly: true})
       .status(200)

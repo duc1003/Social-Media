@@ -3,7 +3,7 @@ import { addPost, getPosts } from '../controller/PostsController.js';
 
 const route = express.Router();
 
-route.get("/getPosts", getPosts);
+route.get("/", getPosts);
 route.post("/addPost", addPost);
 
 export default route;
